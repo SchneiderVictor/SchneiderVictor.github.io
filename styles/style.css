@@ -1,0 +1,69 @@
+﻿body {
+	margin: 0px;
+	background-color: #EFEEEE;
+    font-family: Helvetica, sans-serif;
+}
+
+.banner {
+	background-color: #000;
+	padding: 0px;
+
+	height: 150px;
+	width: 100%;
+}
+
+.bannerTitle {
+	position: relative;
+	color: white;
+
+	margin: 0px;
+	margin-left: 50px;
+	
+	top: 50px;
+}
+
+#buttonsContainer {
+	margin-top: 150px;
+	text-align: center;
+}
+
+.introButton {
+	display: inline-block;
+	background-color: #FEFEFE;
+	
+	width: 200px;
+	height: 200px;
+
+	border-radius: 50%;
+
+	margin-left: 50px;
+	margin-right: 50px;
+	transition: background-color 0.5s ease-out;
+}
+
+.introButton:hover {
+  background-color: #99BADD;
+  cursor: pointer;
+}
+
+.divider {
+	display: inline-block;
+	background-color: black;
+
+	width: 0px;
+	height: 200px;
+
+	border: 1px solid #000;
+}
+
+.introButtonIcon {
+	float: left;
+	width: 50%;
+
+	margin-top: 25%;
+	margin-left: 25%;
+}
+
+.introButtonTitle {
+	margin-bottom: 10%;
+}
