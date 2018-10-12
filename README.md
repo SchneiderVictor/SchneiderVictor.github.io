@@ -9,5 +9,6 @@ This webpage is a work in progress and I will be improving upon it as I learn fu
 What I've learned thus far
 ----------
 
-1. Some drawbacks and workarounds with css positioning
-2. Color transition animations
+- Some drawbacks and workarounds with css positioning
+- Color transition animations
+- How to combine CSS selectors to bundle animations

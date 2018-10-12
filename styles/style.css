@@ -1,7 +1,8 @@
 ﻿body {
 	margin: 0px;
 	background-color: #EFEEEE;
-    font-family: Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
+	text-align: center;
 }
 
 .banner {
@@ -23,12 +24,14 @@
 }
 
 #buttonsContainer {
+	display: inline-block;
 	margin-top: 150px;
 	text-align: center;
 }
 
 .introButton {
-	display: inline-block;
+	/*display: inline-block;*/
+	float: left;
 	background-color: #FEFEFE;
 	
 	width: 200px;
@@ -36,19 +39,23 @@
 
 	border-radius: 50%;
 
+	font-size: 0%;
+
 	margin-left: 50px;
 	margin-right: 50px;
-	transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out, font-size 0.5s ease-out;
 }
 
 .introButton:hover {
   background-color: #99BADD;
+  font-size: 100%;
   cursor: pointer;
 }
 
 .divider {
 	display: inline-block;
 	background-color: black;
+	float: left;
 
 	width: 0px;
 	height: 200px;
@@ -57,11 +64,17 @@
 }
 
 .introButtonIcon {
-	float: left;
+	display: block;
 	width: 50%;
 
 	margin-top: 25%;
 	margin-left: 25%;
+
+	transition: margin-top 0.5s ease-out;
+}
+
+.introButton:hover .introButtonIcon {
+	margin-top: 20%;
 }
 
 .introButtonTitle {
