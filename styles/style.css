@@ -5,6 +5,10 @@
 	text-align: center;
 }
 
+a {
+	color: black;
+}
+
 .banner {
 	background-color: #000;
 	padding: 0px;
@@ -26,7 +30,6 @@
 #buttonsContainer {
 	display: inline-block;
 	margin-top: 150px;
-	text-align: center;
 }
 
 .introButton {
