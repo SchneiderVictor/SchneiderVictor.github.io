@@ -1,85 +1,60 @@
 ﻿body {
 	margin: 0px;
 	background-color: #EFEEEE;
-    font-family: Arial, sans-serif;
-	text-align: center;
 }
 
-a {
-	color: black;
-}
-
-.banner {
+#banner {
 	background-color: #000;
-	padding: 0px;
+	padding: 10px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 
-	height: 150px;
 	width: 100%;
 }
 
-.bannerTitle {
-	position: relative;
+#bannerTitle {
 	color: white;
 
 	margin: 0px;
-	margin-left: 50px;
 	
 	top: 50px;
 }
 
-#buttonsContainer {
+#navBar {
+	background-color: #333;
+	padding: 10px;
+
+	width: 100%;
+}
+
+.navButton {	
 	display: inline-block;
-	margin-top: 150px;
-}
-
-.introButton {
-	/*display: inline-block;*/
-	float: left;
-	background-color: #FEFEFE;
 	
-	width: 200px;
-	height: 200px;
+	border-radius: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
 
-	border-radius: 50%;
-
-	font-size: 0%;
-
-	margin-left: 50px;
-	margin-right: 50px;
-	transition: background-color 0.5s ease-out, font-size 0.5s ease-out;
+	transition: background-color 0.5s ease-out;
 }
 
-.introButton:hover {
-  background-color: #99BADD;
-  font-size: 100%;
+.navButton:hover {
+	/*99BADD*/
+  background-color: #555;
   cursor: pointer;
 }
 
-.divider {
-	display: inline-block;
-	background-color: black;
-	float: left;
-
+.navButtonIcon {
 	width: 0px;
-	height: 200px;
+	height: 0px;
 
-	border: 1px solid #000;
+	transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
 }
 
-.introButtonIcon {
-	display: block;
-	width: 50%;
-
-	margin-top: 25%;
-	margin-left: 25%;
-
-	transition: margin-top 0.5s ease-out;
+.navButton:hover .navButtonIcon {
+	width: 10px;
+	height: 10px;
 }
 
-.introButton:hover .introButtonIcon {
-	margin-top: 20%;
-}
-
-.introButtonTitle {
-	margin-bottom: 10%;
+.buttonLabel {
+	color: white;
 }
