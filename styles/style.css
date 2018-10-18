@@ -3,6 +3,10 @@
 	background-color: #EFEEEE;
 }
 
+a:hover {
+	text-decoration: none;
+}
+
 #banner {
 	background-color: #000;
 	padding: 10px;
@@ -30,7 +34,7 @@
 .navButton {	
 	display: inline-block;
 	
-	border-radius: 10px;
+	border-radius: 15px;
 	padding-left: 10px;
 	padding-right: 10px;
 
@@ -38,7 +42,6 @@
 }
 
 .navButton:hover {
-	/*99BADD*/
   background-color: #555;
   cursor: pointer;
 }
@@ -57,4 +60,33 @@
 
 .buttonLabel {
 	color: white;
+}
+
+.contactLogo {
+	height: 30px;
+
+	margin: 5px;
+}
+
+.logoContainer {
+	display: inline-block;
+	padding: 10px;
+
+	border-radius: 20px;
+
+	transition: background-color 0.5s ease-in-out;
+}
+
+.logoContainer:hover {
+	background-color: #99BADD;
+}
+
+.logoLabel {
+	font-size: 0%;
+	
+	transition: font-size 0.5s ease-in-out;
+}
+
+.logoContainer:hover .logoLabel {
+	font-size: 100%;
 }
