@@ -89,14 +89,14 @@ a:hover {
 	font-size: 100%;
 }
 
-#stickyNav {
+#stickyNavContainer {
 	white-space: nowrap;
 	background: #37474F;
 	
 	padding: 0px;
 }
 
-#stickyNav ul {
+#stickyNavContainer ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -104,19 +104,24 @@ a:hover {
 
 /* Only stick if you can fit */
 @media (min-height: 300px) {
-  #stickyNav ul {
-    position: sticky;
+  #stickyNavContainer ul {
+    /*position: sticky;*/
     top: 0;
   }
 }
 
-#stickyNav ul li a {
+#stickyNavContainer ul li a {
   display: block;
   padding: 0.5rem 1rem;
   color: white;
   text-decoration: none;
 }
 
-#stickyNav ul li a.current {
-  background: black;
+.oldNav {
+	position: static;
+}
+
+.stickyNav {
+	position: fixed;
+	top: 0;
 }
