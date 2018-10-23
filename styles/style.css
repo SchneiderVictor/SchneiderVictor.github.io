@@ -1,6 +1,11 @@
-﻿body {
+﻿html {
+  scroll-behavior: smooth;
+}
+
+body {
 	margin: 0px;
 	background-color: #EFEEEE;
+	position: relative;
 }
 
 a:hover {
@@ -84,6 +89,34 @@ a:hover {
 	font-size: 100%;
 }
 
-.container-fluid {
-	padding: 20px;
+#stickyNav {
+	white-space: nowrap;
+	background: #37474F;
+	
+	padding: 0px;
+}
+
+#stickyNav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Only stick if you can fit */
+@media (min-height: 300px) {
+  #stickyNav ul {
+    position: sticky;
+    top: 0;
+  }
+}
+
+#stickyNav ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+#stickyNav ul li a.current {
+  background: black;
 }
