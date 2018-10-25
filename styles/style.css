@@ -13,7 +13,7 @@ a:hover {
 }
 
 footer {
-	height: 100px;
+	height: 75px;
 	background-color: #000;
 }
 
@@ -130,10 +130,15 @@ footer {
 
 .oldNav {
 	position: static;
-  padding: 0rem 1rem;
+	padding: 0rem 1rem;
 }
 
 .stickyNav {
 	position: fixed;
 	top: 0;
+	padding: 0rem 1rem;
+}
+
+.smallerCard {
+	/* width: 33%; */
 }

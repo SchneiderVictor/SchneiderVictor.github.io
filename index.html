@@ -113,40 +113,110 @@
 						</div>
 
 						<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#workOverview">
-							<div class="card-body">
-							PCRS_JSLINUX description ...
+								<p><a href="https://github.com/schneidervictor/PCRS_JSLINUX"><small class="text-muted">See https://github.com/schneidervictor/PCRS_JSLINUX </small></a></p>
+									
+								<p>●	An exploratory project to emulate the Linux bash terminal on a web browser. Progress was to be guided and supervised by two professors, however the work was done independently.</p>
+								<p>●	Starting from nothing, I managed to quickly browse and eliminate different options, narrowing down to the most appropriate implementation.</p>
+								<p>●	As a prototype is required, I have taken the initiative to learn JavaScript and the Node.js Express framework.</p>
+								<p>●	This project largely written in JavaScript and C, using emscripten to convert the C code to WebAssembly code.</p>
+
+							<div class="card-deck">
+								<div class="card smallerCard">
+									<img class="card-img-top" src="./res/page1.png" alt="Card image cap">
+									<div class="card-body text-primary">
+										<h5 class="card-title">
+											(Figure 1) The first page served to the browser
+										</h5>
+										<p class="card-text">
+											This is simply a header with a button that redirects you to the page where the emulator would be.
+											I implemented it this way because the finished product would need a button that could copy some
+											fixed files into a specific folder, based on the user (thus “initializing” that user’s “directory”).
+											At the moment, the code copies original.txt from ./originals/ on the server-side and copies/renames
+											it to copied.txt into ./temp/.
+										</p>
+									</div>
+								</div>
+							
+								<div class="card smallerCard">
+									<img class="card-img-top" src="./res/page2.png" alt="Card image cap">
+									<div class="card-body text-primary">
+										<h5 class="card-title">
+											(Figure 2) The (incomplete) emulator
+										</h5>
+										<p class="card-text">
+											while the Node.js project serves any required files (local or remote; see Figure 5
+											to see how remote files are served) to some backend C code (that was converted into
+											JavaScript and WebAssembly code through Emscripten)
+										</p>
+									</div>
+									</div>
 							</div>
-						</div>
+
+							<div class="card-deck">
+								<div class="card smallerCard">
+									<img class="card-img-top" src="./res/app1.png" alt="Card image cap">
+									<div class="card-body text-primary">
+										<h5 class="card-title">
+											(Figure 3)
+										</h5>
+									</div>
+								</div>
+
+								<div class="card smallerCard">
+									<img class="card-img-top" src="./res/app2.png" alt="Card image cap">
+									<div class="card-body text-primary">
+										<h5 class="card-title">
+											(Figure 4)
+										</h5>
+										<p class="card-text">
+											The skeleton code for the 'initialization' of a user's repo.
+										</p>
+									</div>
+								</div>
+
+								<div class="card smallerCard">
+									<img class="card-img-top" src="./res/app3.png" alt="Card image cap">
+									<div class="card-body text-primary">
+										<h5 class="card-title">
+											(Figure 5)
+										</h5>
+										<p class="card-text">
+											The backend code in charge of serving files not hosted on the server.
+										</p>
+									</div>
+								</div>
+							</div>
 						</div>
 
 						<div class="card">
-						<div class="card-header" id="headingTwo">
-							<h5 class="mb-0">
-							<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-								DotsNLines
-							</button>
-							</h5>
-						</div>
-
-						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#workOverview">
-							<div class="card-body">
-							DotsNLines description ...
+							<div class="card-header" id="headingTwo">
+								<h5 class="mb-0">
+								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									DotsNLines
+								</button>
+								</h5>
 							</div>
-						</div>
-						</div>
 
-						<div class="card">
-						<div class="card-header" id="headingThree">
-							<h5 class="mb-0">
-							<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-								@memories
-							</button>
-							</h5>
-						</div>
+							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#workOverview">
+								<div class="card-body">
+								DotsNLines description ...
+								</div>
+							</div>
+							</div>
 
-						<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#workOverview">
-							<div class="card-body">
-							@memories description ...
+							<div class="card">
+							<div class="card-header" id="headingThree">
+								<h5 class="mb-0">
+								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									@memories
+								</button>
+								</h5>
+							</div>
+
+							<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#workOverview">
+								<div class="card-body">
+								@memories description ...
+								</div>
 							</div>
 						</div>
 					</div>
