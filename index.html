@@ -26,7 +26,7 @@
 					<a class="nav-link" href="./index.html">
 						<div class="navButton">
 							<img class="navButtonIcon" src="./icons/round-person-24px.svg">
-							<span class="buttonLabel">Overview</span>
+							<span>Overview</span>
 						</div>
 					</a>
 				</li>
@@ -35,7 +35,7 @@
 					<a class="nav-link" href="./resume.html">
 						<div class="navButton">
 							<img class="navButtonIcon" src="./icons/round-file_copy-24px.svg">
-							<span class="buttonLabel">Get my resume</span>
+							<span>Get my resume</span>
 						</div>
 					</a>
 				</li>
@@ -44,7 +44,7 @@
 					<a class="nav-link" href="./contact_me.html">
 						<div class="navButton">
 							<img class="navButtonIcon" src="./icons/round-contacts-24px.svg">
-							<span class="buttonLabel">Contact Me</span>
+							<span>Contact Me</span>
 						</div>
 					</a>
 				</li>
@@ -68,36 +68,46 @@
 			</div>
 
 
-			<div class="col-xs-12 col-sm-9 col-md-10" id="contentContainer">
+			<div class="col-xs-12 col-sm-9 col-md-10 contentContainer">
 
 				<div class="row">
 					<div class="col-12" id= "introMe">
-						<h2>Who am I</h2>
+						<h2>Who am I?</h2>
 					</div>
 				</div>
 
 				<div class="row">
 					<div class="col-12">
-						<p>
-							I am a student at the University of Toronto and will be graduating this June with a major in
+						<p class="text-justify">
+							I am a student at the University of Toronto who will be graduating this June with a major in
 							Human Biology, a major in Pharmacology and a minor in Computer Science. I invite you to ask me
 							I transitioned to Software Engineering from the Life Sciences, but to keep a long story short:
 							the interest sparked when I was challenged to build a calculator on Minecraft.
+						</p>
+						<p>
+							I started to transition from the Life Sciences to Software Engineering when I was challenged to
+							build a calculator on Minecraft for Xbox. This was an understandably arduous task considering I did not know
+							any binary code, logic gating, or even of the Coding Block that existed on the PC version of the game!
+						</p>
+						<p>
+							To keep a long story short, I made a very rough first draft that could only calculate 1+2, 1+3 or 2+3. After
+							improving upon my design by building an extendable "skeleton" that could sum any distinct positive integer, I
+							decided to take "Computer Science for the Life Sciences" (CSC120) and the rest is history!
 						</p>
 					</div>
 				</div>
 
 				<div class="row">
-					<div class="col-12" id= "introWork">
+					<div class="col-12" id="introWork">
 						<h2>What have I done</h2>
 					</div>
 				</div>
 
 				<div class="row">
 					<div class="col-12">
-						<p>
-							See below for a brief overview of my published work! Feel free to take a glance at my other, 
-							smaller miscellaneous work as well!
+						<p class="text-justify">
+							See below for a brief overview of my published work! Feel free to take a glance at my other 
+							miscellaneous work as well!
 						</p>
 					</div>
 				</div>
@@ -112,13 +122,13 @@
 							</h5>
 						</div>
 
-						<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#workOverview">
-								<p><a href="https://github.com/schneidervictor/PCRS_JSLINUX"><small class="text-muted">See https://github.com/schneidervictor/PCRS_JSLINUX </small></a></p>
+						<div id="collapseOne" class="collapse contentContainer" aria-labelledby="headingOne" data-parent="#workOverview">
+							<p class="text-justify"><a href="https://github.com/schneidervictor/PCRS_JSLINUX"><small class="text-muted">See https://github.com/schneidervictor/PCRS_JSLINUX </small></a></p>
 									
-								<p>●	An exploratory project to emulate the Linux bash terminal on a web browser. Progress was to be guided and supervised by two professors, however the work was done independently.</p>
-								<p>●	Starting from nothing, I managed to quickly browse and eliminate different options, narrowing down to the most appropriate implementation.</p>
-								<p>●	As a prototype is required, I have taken the initiative to learn JavaScript and the Node.js Express framework.</p>
-								<p>●	This project largely written in JavaScript and C, using emscripten to convert the C code to WebAssembly code.</p>
+							<p class="text-justify">●	An exploratory project to emulate the Linux bash terminal on a web browser. Progress was to be guided and supervised by two professors, however the work was done independently.</p>
+							<p class="text-justify">●	Starting from nothing, I managed to quickly browse and eliminate different options, narrowing down to the most appropriate implementation.</p>
+							<p class="text-justify">●	As a prototype is required, I have taken the initiative to learn JavaScript and the Node.js Express framework.</p>
+							<p class="text-justify">●	This project largely written in JavaScript and C, using emscripten to convert the C code to WebAssembly code.</p>
 
 							<div class="card-deck">
 								<div class="card smallerCard">
@@ -127,7 +137,7 @@
 										<h5 class="card-title">
 											(Figure 1) The first page served to the browser
 										</h5>
-										<p class="card-text">
+										<p class="card-text text-justify">
 											This is simply a header with a button that redirects you to the page where the emulator would be.
 											I implemented it this way because the finished product would need a button that could copy some
 											fixed files into a specific folder, based on the user (thus “initializing” that user’s “directory”).
@@ -143,13 +153,13 @@
 										<h5 class="card-title">
 											(Figure 2) The (incomplete) emulator
 										</h5>
-										<p class="card-text">
+										<p class="card-text text-justify">
 											while the Node.js project serves any required files (local or remote; see Figure 5
 											to see how remote files are served) to some backend C code (that was converted into
 											JavaScript and WebAssembly code through Emscripten)
 										</p>
 									</div>
-									</div>
+								</div>
 							</div>
 
 							<div class="card-deck">
@@ -168,7 +178,7 @@
 										<h5 class="card-title">
 											(Figure 4)
 										</h5>
-										<p class="card-text">
+										<p class="card-text text-justify">
 											The skeleton code for the 'initialization' of a user's repo.
 										</p>
 									</div>
@@ -180,43 +190,43 @@
 										<h5 class="card-title">
 											(Figure 5)
 										</h5>
-										<p class="card-text">
+										<p class="card-text text-justify">
 											The backend code in charge of serving files not hosted on the server.
 										</p>
 									</div>
 								</div>
 							</div>
 						</div>
+					</div>
+
+					<div class="card">
+						<div class="card-header" id="headingTwo">
+							<h5 class="mb-0">
+							<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								DotsNLines
+							</button>
+							</h5>
+						</div>
+
+						<div id="collapseTwo" class="collapse contentContainer" aria-labelledby="headingTwo" data-parent="#workOverview">
+							<div class="card-body">
+								More coming soon.
+							</div>
+						</div>
+						</div>
 
 						<div class="card">
-							<div class="card-header" id="headingTwo">
-								<h5 class="mb-0">
-								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-									DotsNLines
-								</button>
-								</h5>
-							</div>
+						<div class="card-header" id="headingThree">
+							<h5 class="mb-0">
+							<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								@memories
+							</button>
+							</h5>
+						</div>
 
-							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#workOverview">
-								<div class="card-body">
-								DotsNLines description ...
-								</div>
-							</div>
-							</div>
-
-							<div class="card">
-							<div class="card-header" id="headingThree">
-								<h5 class="mb-0">
-								<button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-									@memories
-								</button>
-								</h5>
-							</div>
-
-							<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#workOverview">
-								<div class="card-body">
-								@memories description ...
-								</div>
+						<div id="collapseThree" class="collapse contentContainer" aria-labelledby="headingThree" data-parent="#workOverview">
+							<div class="card-body">
+								More coming soon.
 							</div>
 						</div>
 					</div>

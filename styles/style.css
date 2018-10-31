@@ -38,16 +38,19 @@ footer {
 
 .navButton {	
 	display: inline-block;
+
+	color: white;
 	
 	border-radius: 15px;
 	padding-left: 10px;
 	padding-right: 10px;
 
-	transition: background-color 0.5s ease-out;
+	transition: background-color 0.5s ease-out, color 0.5s ease-out;
 }
 
 .navButton:hover {
-  background-color: #555;
+  background-color: white;
+  color: black;
   cursor: pointer;
 }
 
@@ -61,10 +64,6 @@ footer {
 .navButton:hover .navButtonIcon {
 	width: 10px;
 	height: 10px;
-}
-
-.buttonLabel {
-	color: white;
 }
 
 .contactLogo {
@@ -96,7 +95,7 @@ footer {
 	font-size: 100%;
 }
 
-#contentContainer {
+.contentContainer {
 	padding: 20px;
 }
 
@@ -143,4 +142,17 @@ footer {
 
 .smallerCard {
 	/* width: 33%; */
+}
+
+.profilePic {
+	display: inline-block;
+
+	float: left;
+	
+	width: 200px;
+	height: 200px;
+
+	border: solid 1px white;
+
+	border-radius: 50%;
 }
