@@ -67,7 +67,7 @@ footer {
 }
 
 .contactLogo {
-	height: 30px;
+	height: 20px;
 
 	margin: 5px;
 }
@@ -93,10 +93,6 @@ footer {
 
 .logoContainer:hover .logoLabel {
 	font-size: 100%;
-}
-
-.contentContainer {
-	padding: 20px;
 }
 
 #stickyNavContainer {
