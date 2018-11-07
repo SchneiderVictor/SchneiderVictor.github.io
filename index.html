@@ -159,6 +159,7 @@
                                     code to WebAssembly code.
                                 </li>
                             </ul>
+
                             <div class="card-deck">
                                 <div class="card shadow">
                                     <img class="card-img-top" src="./res/page1.png" alt="Card image cap">
@@ -167,15 +168,8 @@
                                             (Figure 1) The first page served to the browser
                                         </h5>
                                         <p class="card-text text-justify">
-                                            This is simply a header with a button that redirects you to the page where
-                                            the emulator would be.
-                                            I implemented it this way because the finished product would need a button
-                                            that could copy some
-                                            fixed files into a specific folder, based on the user (thus “initializing”
-                                            that user’s “directory”).
-                                            At the moment, the code copies original.txt from ./originals/ on the
-                                            server-side and copies/renames
-                                            it to copied.txt into ./temp/.
+                                            This is simply a header with a button that "initializes" the user's virtual
+                                            storage and redirects them to the page where the emulator would be.
                                         </p>
                                     </div>
                                 </div>
@@ -187,11 +181,10 @@
                                             (Figure 2) The (incomplete) emulator
                                         </h5>
                                         <p class="card-text text-justify">
-                                            while the Node.js project serves any required files (local or remote; see
-                                            Figure 5
-                                            to see how remote files are served) to some backend C code (that was
-                                            converted into
-                                            JavaScript and WebAssembly code through Emscripten)
+                                            The Node.js project serves any required files (local or remote; see
+                                            Figure 5 to see how remote files are served) to some backend C code (that
+                                            was
+                                            converted into JavaScript and WebAssembly code through Emscripten)
                                         </p>
                                     </div>
                                 </div>
@@ -248,7 +241,6 @@
                     <div id="collapseTwo" class="collapse contentContainer" aria-labelledby="headingTwo"
                          data-parent="#workOverview">
                         <div class="card-body">
-                            <!-- -->
                             <small class="text-muted">
                                 <a href="https://github.com/schneidervictor/PCRS_JSLINUX">See
                                     https://github.com/schneidervictor/DotsNLines</a>
@@ -271,7 +263,8 @@
                                              alt="First slide">
                                         <div class="carousel-caption d-none d-md-block">
                                             <h5>The initialization page</h5>
-                                            <p>Users are greeted with a simple interface for choosing their board size</p>
+                                            <p>Users are greeted with a simple interface for choosing their board
+                                                size</p>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
@@ -295,7 +288,7 @@
                                     <div class="carousel-item">
                                         <img class="d-block w-100"
                                              src="./res/app_sample2.jpg"
-                                             alt="Third slide">
+                                             alt="Fourth slide">
                                         <div class="carousel-caption d-none d-md-block">
                                             <h5>Gameplay sample 2</h5>
                                             <p>Notice the score ratios stay up to date</p>
@@ -304,7 +297,7 @@
                                     <div class="carousel-item">
                                         <img class="d-block w-100"
                                              src="./res/app_sample3.jpg"
-                                             alt="Third slide">
+                                             alt="Fifth slide">
                                         <div class="carousel-caption d-none d-md-block">
                                             <h5>Gameplay sample 3</h5>
                                             <p>Notice the green dot indicated the start of a move</p>
@@ -322,8 +315,6 @@
                                     <span class="sr-only">Next</span>
                                 </a>
                             </div>
-
-                            <!-- -->
                         </div>
                     </div>
                 </div>
