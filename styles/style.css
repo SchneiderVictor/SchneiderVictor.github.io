@@ -85,6 +85,13 @@ footer {
 	height: 10px;
 }
 
+#profilePic {
+	width: 100%;
+	
+	border: solid 3px white;
+	border-radius: 50%;
+}
+
 .contactLogo {
 	height: 20px;
 
