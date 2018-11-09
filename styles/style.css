@@ -47,7 +47,7 @@ footer {
 	width: 100%;
 }
 
-#bannerTitle {
+.bannerTitle {
 	color: white;
 
 	margin: 0px;
@@ -85,9 +85,15 @@ footer {
 	height: 10px;
 }
 
-#profilePic {
+#profilePicLarge {
 	width: 100%;
-	
+}
+
+#profilePicSmall {
+	height: 100px;
+}
+
+#profilePicLarge, #profilePicSmall{
 	border: solid 3px white;
 	border-radius: 50%;
 }
