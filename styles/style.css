@@ -40,7 +40,7 @@ footer {
 
 #banner {
     font-family: serif;
-	background-color: #000;
+	background: linear-gradient(#000, #343a40);
 	padding: 20px;
 	padding-top: 50px;
 	padding-bottom: 50px;
