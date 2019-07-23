@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>SVT Portfolio</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132505022-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-132505022-1');
+	</script>
+</head>
+<body>
+<div id="banner">
+    <h1 class="bannerTitle d-inline-block">Schneider</h1>
+    <h1 class="bannerTitle d-inline-block">Victor-Tulias</h1>
+</div>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="./index.html">
+                    <div class="navButton">
+                        <img class="navButtonIcon" src="./icons/round-person-24px.svg">
+                        <span>Overview</span>
+                    </div>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="./resume.html">
+                    <div class="navButton">
+                        <img class="navButtonIcon" src="./icons/round-file_copy-24px.svg">
+                        <span>Get my resume</span>
+                    </div>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="./binge_calculator.html">
+                    <div class="navButton">
+                        <img class="navButtonIcon" src="./icons/round-file_copy-24px.svg">
+                        <span>Binge Calculator</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="d-none d-sm-block col-sm-3 col-md-2" id="stickyNavContainer">
+            <nav class="oldNav">
+                <ul>
+                    <li><a href="#intro">
+                        <div class="navButton">What is a Binge Calculator</div>
+                    </a></li>
+                    <li><a href="#reason">
+                        <div class="navButton">Why did i make this</div>
+                    </a></li>
+                    <li><a href="#calculator">
+                        <div class="navButton">The calculator</div>
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <div class="col-xs-12 col-sm-9 col-md-10 contentContainer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 id="intro">What is a 'Binge Calculator?'</h2>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12">
+                        <p>
+                            This calculator is a simple tool for estimating how long it would take to binge 
+                            a show! All you need is:
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <ul>
+                            <li>The total number of aired episodes (to this date)</li>
+                            <li>The total number of episodes you expect to watch <strong>(canon/mixed episodes)</strong>
+                                and/or the total number of episodes you expect to skip <strong>(filler episodes)</strong>
+                            </li>
+                            <li>The number of episodes you expect to watch per day (on average)</li>
+                            <li>The number of episodes aired per week</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <p>
+                            Remember that this tool is for <strong>estimations</strong>! If you have exact numbers, and can commit
+                            to a strict routine, the calculation can still be off by a couple days if your show suddenly decides
+                            to air far more/less fillers than it historically has!
+                            <br>
+                            <strong>Notes:</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <ul>
+                            <li>Canon episodes are episodes that are certainly part of the storyline, 
+                                these should not be skipped.</li>
+                            <li>Filler episodes are episodes that are certainly not part of the storyline.
+                                They often deviate from the story and do not contribute. These episodes are
+                                often seen as a waste of time and as such can be skipped.
+                            </li>
+                            <li>Mixed episodes fall within the grey area. Parts of the episode have relevance to the storyline
+                                and may be important later, however it is often the case that the majority of the episode
+                                deviates and does not contribute to the story. 
+                            </li>
+                            <li>For examples, please see <a href="https://www.animefillerlist.com/">https://www.animefillerlist.com/</a> 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h2 id="reason">Why did I make this?</h2>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-12">
+                        <p>
+                            I love anime, and one of my favorites is One Piece, however currently (July 22nd, 2019), a total of
+                            896 episodes have aired, 102 of which have been <strong>fillers</strong>!
+                            <br>
+                            It's reasonably difficult to start such a show, it would take forever to catch up, any progress feels
+                            insignificant and then you even have to factor episodes being aired as you're catching up!
+                            <br>
+                            I feel like demystifying the amount of time it would take to catch up could help anyone embark on the journey!
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h2>The calcuator!</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <form id="calculator">
+                            <div class="form-row">
+                                <div class="form-group col-xs-12 col-md-4">
+                                    <label for="totalEpisodesInput">Total Episodes</label>
+                                    
+                                    <input type="number" class="form-control" placeholder="Total Episodes" id="totalEpisodesInput">
+                                </div>
+                                
+                                <div class="form-group col-xs-12 col-md-4">
+                                    <label for="canonEpisodesInput">Canon/Mixed Episodes</label>
+                                    
+                                    <input type="number" class="form-control" placeholder="Canon/Mixed Episodes" id="canonEpisodesInput">
+                                </div>
+                                
+                                <div class="form-group col-xs-12 col-md-4">
+                                    <label for="fillerEpisodesInput">Filler Episodes</label>
+                                    
+                                    <input type="number" class="form-control" placeholder="Filler Episodes" id="fillerEpisodesInput">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-xs-12 col-md-6">
+                                    <label for="episodesPerDayInput">Episodes watched per day</label>
+                                    
+                                    <input type="number" class="form-control" placeholder="Episodes watched per day" id="episodesPerDayInput">
+                                </div>
+                                
+                                <div class="form-group col-xs-12 col-md-6">
+                                    <label for="episodesPerWeekInput">Episodes aired per week</label>
+                                    
+                                    <input type="number" class="form-control" placeholder="Episodes aired per week" id="episodesPerWeekInput">
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Calculate</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h4 class="invisible" id="calculationResult">With <strong id="currentEpisodes"></strong> aired episodes to watch, assuming a
+                            <strong id="fillerRate"></strong>% filler rate for episodes to be aired, you should be fully
+                            caught up in <strong id="estimatedDays"></strong> days!
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<script src="./scripts/stick_nav.js"></script>
+<script src="./scripts/daysToCatchUp.js"></script>
+</body>
+</html>
